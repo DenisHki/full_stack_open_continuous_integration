@@ -11,11 +11,7 @@ jobs:
     steps:
       - name: Say hello
         run: |
-          echo "Hello World!"
-  date_job:
-    runs-on: ubuntu-latest
-    steps:
+          echo "Hello World!"   
+
       - name: Show current date
-        run: |
-          echo "Current date and time:"
-          date        
+        run: date             
