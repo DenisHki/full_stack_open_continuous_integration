@@ -35,6 +35,20 @@ module.exports = [
       "no-console": 0,
     },
   },
+  
+  {
+    files: ["jest.setup.js"],
+    languageOptions: {
+      ecmaVersion: 2018,
+      sourceType: "commonjs",
+      globals: {
+        ...globals.node,
+        require: "readonly",
+        global: "readonly",
+      },
+    },
+  },
+
   {
     files: ["src/**/*.{js,jsx}", "test/**/*.{js,jsx}"],
     plugins: {
